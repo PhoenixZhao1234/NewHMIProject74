@@ -1,0 +1,36 @@
+Name: 'OPC-UA'
+Id: g=a33f8b3f1cf5233ce9f1bfb11c297084
+Type: FolderType
+Children:
+- Name: OPCUAServer1
+  Id: g=925dcbe68dd1e290fe2d820fc3207512
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=17fe7197ae47dc69d18bdd156fdc0d81
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Id: g=2549bf234653321c0bdf782b6ccd1bcf
+    Type: BaseObjectType
+  - Name: MinimumMessageSecurityMode
+    Id: g=d151ab315c2274dd6f3d43e718557f28
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 2
+  - Name: MinimumSecurityPolicy
+    Id: g=06093054b5db867274961bf2c65d2801
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 3
+  - Name: ServerCertificateFile
+    Id: g=e5a6bd75687f5a107292cd3add501772
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/server.cert.der"
+  - Name: ServerPrivateKeyFile
+    Id: g=b582a6c3c60db88454bbe1f04736d733
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/server.key.pem"
